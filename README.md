@@ -5,6 +5,8 @@ classical NLP. It predicts one of five departments, assigns a transparent
 priority, exposes confidence and influential words, sends uncertain tickets to
 human review, and captures corrections for later retraining.
 
+**Live demo:** <https://ecxcwgz7nem8y6hopvsfjq.streamlit.app/>
+
 ![SupportFlow AI prediction and explanation](reports/figures/supportflow_demo.png)
 
 ## Features
