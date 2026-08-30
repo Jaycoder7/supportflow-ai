@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments and tools
+.venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Generated artifacts
+data/raw/*
+data/processed/*
+data/feedback/*
+models/*
+reports/figures/*
+
+# Keep empty artifact directories in Git
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/feedback/.gitkeep
+!models/.gitkeep
+!models/router.joblib
+!models/metadata.json
+!reports/figures/.gitkeep
+!reports/figures/confusion_matrix.html
+!reports/figures/supportflow_demo.png

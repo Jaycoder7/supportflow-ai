@@ -1,0 +1,353 @@
+{
+  "selection_metric": "validation_macro_f1",
+  "validation": {
+    "logistic_regression": {
+      "accuracy": 0.9983079526226735,
+      "macro_f1": 0.9985283664913096,
+      "classification_report": {
+        "Billing": {
+          "precision": 0.9954648526077098,
+          "recall": 0.9977272727272727,
+          "f1-score": 0.996594778660613,
+          "support": 440.0
+        },
+        "Technical Support": {
+          "precision": 0.9966555183946488,
+          "recall": 1.0,
+          "f1-score": 0.998324958123953,
+          "support": 298.0
+        },
+        "Account Access": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 149.0
+        },
+        "Refund": {
+          "precision": 1.0,
+          "recall": 0.9954545454545455,
+          "f1-score": 0.9977220956719818,
+          "support": 440.0
+        },
+        "Product Feedback": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 446.0
+        },
+        "accuracy": 0.9983079526226735,
+        "macro avg": {
+          "precision": 0.9984240742004717,
+          "recall": 0.9986363636363637,
+          "f1-score": 0.9985283664913096,
+          "support": 1773.0
+        },
+        "weighted avg": {
+          "precision": 0.9983123968578667,
+          "recall": 0.9983079526226735,
+          "f1-score": 0.9983081005230003,
+          "support": 1773.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          439,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          298,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          149,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          438,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          446
+        ]
+      ]
+    },
+    "multinomial_naive_bayes": {
+      "accuracy": 0.9926677946982515,
+      "macro_f1": 0.9940952606662246,
+      "classification_report": {
+        "Billing": {
+          "precision": 1.0,
+          "recall": 0.975,
+          "f1-score": 0.9873417721518988,
+          "support": 440.0
+        },
+        "Technical Support": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 298.0
+        },
+        "Account Access": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 149.0
+        },
+        "Refund": {
+          "precision": 0.9776785714285714,
+          "recall": 0.9954545454545455,
+          "f1-score": 0.9864864864864865,
+          "support": 440.0
+        },
+        "Product Feedback": {
+          "precision": 0.9933184855233853,
+          "recall": 1.0,
+          "f1-score": 0.9966480446927374,
+          "support": 446.0
+        },
+        "accuracy": 0.9926677946982515,
+        "macro avg": {
+          "precision": 0.9941994113903914,
+          "recall": 0.9940909090909091,
+          "f1-score": 0.9940952606662246,
+          "support": 1773.0
+        },
+        "weighted avg": {
+          "precision": 0.9927798172430914,
+          "recall": 0.9926677946982515,
+          "f1-score": 0.9926618509497183,
+          "support": 1773.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          429,
+          0,
+          0,
+          10,
+          1
+        ],
+        [
+          0,
+          298,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          149,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          438,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          446
+        ]
+      ]
+    }
+  },
+  "threshold_analysis": [
+    {
+      "threshold": 0.35,
+      "coverage": 0.9977439368302312,
+      "review_rate": 0.002256063169768785,
+      "selective_accuracy": 0.9994347088750707
+    },
+    {
+      "threshold": 0.4,
+      "coverage": 0.9966159052453468,
+      "review_rate": 0.0033840947546531774,
+      "selective_accuracy": 0.9994340690435767
+    },
+    {
+      "threshold": 0.45,
+      "coverage": 0.9966159052453468,
+      "review_rate": 0.0033840947546531774,
+      "selective_accuracy": 0.9994340690435767
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9960518894529047,
+      "review_rate": 0.003948110547095318,
+      "selective_accuracy": 0.9994337485843715
+    },
+    {
+      "threshold": 0.55,
+      "coverage": 0.9932318104906938,
+      "review_rate": 0.006768189509306244,
+      "selective_accuracy": 0.9994321408290744
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9904117315284828,
+      "review_rate": 0.00958826847151717,
+      "selective_accuracy": 0.9994305239179955
+    },
+    {
+      "threshold": 0.65,
+      "coverage": 0.988155668358714,
+      "review_rate": 0.011844331641285955,
+      "selective_accuracy": 0.9994292237442922
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9796954314720813,
+      "review_rate": 0.02030456852791873,
+      "selective_accuracy": 1.0
+    },
+    {
+      "threshold": 0.75,
+      "coverage": 0.9729272419627749,
+      "review_rate": 0.027072758037225086,
+      "selective_accuracy": 1.0
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.9588268471517203,
+      "review_rate": 0.041173152848279715,
+      "selective_accuracy": 1.0
+    },
+    {
+      "threshold": 0.85,
+      "coverage": 0.9362662154540327,
+      "review_rate": 0.06373378454596734,
+      "selective_accuracy": 1.0
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.8883248730964467,
+      "review_rate": 0.1116751269035533,
+      "selective_accuracy": 1.0
+    }
+  ],
+  "test": {
+    "accuracy": 0.9977452085682075,
+    "macro_f1": 0.9980767637345348,
+    "classification_report": {
+      "Billing": {
+        "precision": 0.9977220956719818,
+        "recall": 0.9954545454545455,
+        "f1-score": 0.9965870307167235,
+        "support": 440.0
+      },
+      "Technical Support": {
+        "precision": 1.0,
+        "recall": 0.9966442953020134,
+        "f1-score": 0.9983193277310924,
+        "support": 298.0
+      },
+      "Account Access": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 149.0
+      },
+      "Refund": {
+        "precision": 0.9954648526077098,
+        "recall": 0.9977272727272727,
+        "f1-score": 0.996594778660613,
+        "support": 440.0
+      },
+      "Product Feedback": {
+        "precision": 0.9977678571428571,
+        "recall": 1.0,
+        "f1-score": 0.9988826815642458,
+        "support": 447.0
+      },
+      "accuracy": 0.9977452085682075,
+      "macro avg": {
+        "precision": 0.9981909610845097,
+        "recall": 0.9979652226967662,
+        "f1-score": 0.9980767637345348,
+        "support": 1774.0
+      },
+      "weighted avg": {
+        "precision": 0.9977477392254349,
+        "recall": 0.9977452085682075,
+        "f1-score": 0.9977450476037832,
+        "support": 1774.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        438,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        297,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        149,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        439,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        447
+      ]
+    ]
+  },
+  "metadata": {
+    "model_version": "2026-08-30T01:46:12+00:00",
+    "trained_at": "2026-08-30T01:46:12+00:00",
+    "selected_model": "logistic_regression",
+    "review_threshold": 0.8,
+    "departments": [
+      "Billing",
+      "Technical Support",
+      "Account Access",
+      "Refund",
+      "Product Feedback"
+    ],
+    "train_rows": 8276,
+    "validation_rows": 1773,
+    "test_rows": 1774
+  }
+}

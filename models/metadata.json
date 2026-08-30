@@ -1,0 +1,16 @@
+{
+  "model_version": "2026-08-30T01:46:12+00:00",
+  "trained_at": "2026-08-30T01:46:12+00:00",
+  "selected_model": "logistic_regression",
+  "review_threshold": 0.8,
+  "departments": [
+    "Billing",
+    "Technical Support",
+    "Account Access",
+    "Refund",
+    "Product Feedback"
+  ],
+  "train_rows": 8276,
+  "validation_rows": 1773,
+  "test_rows": 1774
+}
